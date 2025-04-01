@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "ES2016", // Or a later version like ES2020
+    "module": "CommonJS",
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "moduleResolution": "node",
+     "baseUrl": "./", // Allows absolute paths from src
+     "paths": {
+       "@/*": ["src/*"] // Example path alias
+     }
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "**/*.spec.ts"]
+}
